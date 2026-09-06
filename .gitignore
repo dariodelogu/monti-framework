@@ -1,0 +1,5 @@
+.env
+config/connections.php
+vendor
+composer-dev.json
+composer-dev.lock

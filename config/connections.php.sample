@@ -1,0 +1,13 @@
+<?php
+    return [
+        "default" => [
+            "driver" => "mysql",
+            "host" => "127.0.0.1",
+            "database" => "db_name",
+            "username" => "user",
+            "password" => "1234",
+            "charset" => "utf8",
+            "collation" => "utf8_unicode_ci",
+            "prefix" => "",
+        ]
+    ];
