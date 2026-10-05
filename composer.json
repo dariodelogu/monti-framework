@@ -1,0 +1,17 @@
+{
+    "name": "dariodelogu/monti-framework",
+    "type": "project",
+    "description": "A modular PHP framework, built for speed and simplicity",
+    "keywords": ["monti","framework"],
+    "homepage": "https://github.com/dariodelogu/monti-framework",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=8.4.0",
+        "dariodelogu/monti-framework-core": "^1.0"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "App\\System\\Composer\\DiscoveryScript::postAutoloadDump"
+        ]
+    }
+}
