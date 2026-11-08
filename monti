@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+	/**
+	 * Command line entry point.
+	 *
+	 * Usage: php monti <command>
+	 *
+	 * The commands are exposed by the project and by its modules, run "php monti help" to list them.
+	 */
+	include(__DIR__ . "/vendor/autoload.php");
+
+	\App\System\Project::setRootPath(__DIR__);
+	\App\System\Project::bootstrap();
+
+	exit((new \App\System\CLI\Kernel(new \App\System\CLI\Console()))->run($argv));
